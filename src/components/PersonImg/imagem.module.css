@@ -1,0 +1,9 @@
+.imagem {
+  object-fit: contain;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.imagem:hover {
+  transform: translateY(-10%);
+}
