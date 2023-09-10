@@ -34,7 +34,6 @@ export default function Secoes({ qualTema, qualTexto, ilha }: SecoesProps) {
   ): Personagem | null {
     const temaData = tema ? detalhesApi.anime.east_blue : detalhesApi.serie.east_blue;
     const temaKey = qualTexto as keyof typeof temaData;
-    console.log(temaKey)
     const dados = (temaData[temaKey] as Personagem)
     // console.log(dados)
 

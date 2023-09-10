@@ -24,22 +24,25 @@ export default function Home() {
   };
 
   const alteraTexto = (personagem: string, isCompanheiro: boolean) => {
-    const index = isCompanheiro ? companheiroIndex : adversarioIndex;
-    const newText = isCompanheiro ? companheiros[index] : adversarios[index];
-    setState({ ...state, [isCompanheiro ? "selecionarTexto1" : "selecionarTexto2"]: newText });
+    setState({ ...state, [isCompanheiro ? "selecionarTexto1" : "selecionarTexto2"]: personagem });
   };
 
-  const alteraPersonagem = (isCompanheiro: boolean, botao: boolean) => {
+  const alteraPersonagem = (isCompanheiro: boolean, proximo: boolean) => {
     const index = isCompanheiro ? companheiroIndex : adversarioIndex;
     const length = isCompanheiro ? companheiros.length : adversarios.length;
-    if (botao) {
-      if (index < length - 1) {
-        setState({ ...state, [isCompanheiro ? "companheiroIndex" : "adversarioIndex"]: index + 1 });
-      }
-    } else {
-      if (index > 0) {
-        setState({ ...state, [isCompanheiro ? "companheiroIndex" : "adversarioIndex"]: index - 1 });
-      }
+  
+    if (proximo && index < length - 1) {
+      setState({ 
+        ...state, 
+        [isCompanheiro ? "companheiroIndex" : "adversarioIndex"]: index + 1,
+        [isCompanheiro ? "selecionarTexto1" : "selecionarTexto2"]: isCompanheiro ? companheiros[index + 1] : adversarios[index + 1]
+      });
+    } else if (!proximo && index > 0) {
+      setState({ 
+        ...state, 
+        [isCompanheiro ? "companheiroIndex" : "adversarioIndex"]: index - 1,
+        [isCompanheiro ? "selecionarTexto1" : "selecionarTexto2"]: isCompanheiro ? companheiros[index - 1] : adversarios[index - 1]
+      });
     }
   };
 
@@ -73,13 +76,13 @@ export default function Home() {
         </section>
 
         <section className={`${styles.module} ${styles.content}`}>
-          <Section
-            qualTema={selecionarTema}
-            qualTexto={selecionarTexto2}
-            personagens={adversarios}
-            alteraTexto={(personagem: string) => alteraTexto(personagem, false)}
-            alteraPersonagem={(botao: boolean) => alteraPersonagem(false, botao)}
-          />
+        <Section
+          qualTema={selecionarTema}
+          qualTexto={selecionarTexto2}
+          personagens={adversarios}
+          alteraTexto={(personagem: string) => alteraTexto(personagem, false)}
+          alteraPersonagem={(botao: boolean) => alteraPersonagem(false, botao)}
+        />
         </section>
       </main>
     </>

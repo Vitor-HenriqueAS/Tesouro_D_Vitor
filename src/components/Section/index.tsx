@@ -3,16 +3,22 @@ import PersonImg from "@/components/PersonImg";
 import styles from "./section.module.css";
 
 interface SectionProps {
-  qualTema: boolean
-  qualTexto: string
+  qualTema: boolean;
+  qualTexto: string;
   personagens: string[];
   alteraTexto: (personagem: string) => void;
   alteraPersonagem: (botao: boolean) => void;
 }
 
-export default function Section({ qualTema, qualTexto, personagens, alteraTexto, alteraPersonagem }: SectionProps) {
+export default function Section({
+  qualTema,
+  qualTexto,
+  personagens,
+  alteraTexto,
+  alteraPersonagem,
+}: SectionProps) {
   return (
-    <>
+    <section className={`${styles.module} ${styles.content}`}>
       <div className={styles.manga}>
         <div className={styles.container}>
           <Secoes qualTema={qualTema} qualTexto={qualTexto} ilha="east-blue" />
@@ -22,7 +28,7 @@ export default function Section({ qualTema, qualTexto, personagens, alteraTexto,
                 key={personagem}
                 qualImagens={qualTema}
                 personagem={personagem}
-                ClicouNoPersonagem={alteraTexto}
+                ClicouNoPersonagem={() => alteraTexto(personagem)}
               />
             ))}
           </div>
@@ -32,6 +38,6 @@ export default function Section({ qualTema, qualTexto, personagens, alteraTexto,
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
