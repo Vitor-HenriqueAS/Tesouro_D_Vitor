@@ -10,11 +10,10 @@ export default function Home() {
   const [selecionarTema, setselecionarTema] = useState(true);
   const [selecionarTexto1, setSelecionarTexto1] = useState<string>("east-blue");
   const [selecionarTexto2, setSelecionarTexto2] = useState<string>("alvida");
-  const mugiwaras = ["usopp", "zoro", "luffy", "sanji", "nami"];
-  const adversarios = ["alvida", "morgan", "buggy", "garp", "kuro"];
+  const companheiros = ["east-blue","goldroger","luffy","koby","zoro","shanks","nami","usopp","sanji",];
+  const adversarios = ["alvida", "morgan", "buggy", "garp", "kuro", "mihawk", "arlong"];
 
   const alterarTema = () => setselecionarTema(!selecionarTema);
-
   const alteraTexto1 = (personagem: string) => setSelecionarTexto1(personagem);
   const alteraTexto2 = (personagem: string) => setSelecionarTexto2(personagem);
 
@@ -37,25 +36,25 @@ export default function Home() {
         </section>
 
         <section className={`${styles.module} ${styles.content}`}>
-          <div className={styles.container}>
-            <Secoes qualTema={selecionarTema} qualTexto={selecionarTexto1} />
+          <div className={styles.manga}>
+            <div className={styles.container}>
+              <Secoes qualTema={selecionarTema} qualTexto={selecionarTexto1} ilha="east-blue"/>
+              <div className={styles.personagens}>
+                {companheiros.map((personagem) => (
+                  <PersonImg
+                    key={personagem}
+                    qualImagens={selecionarTema}
+                    personagem={personagem}
+                    ClicouNoPersonagem={alteraTexto1}
+                  />
+                ))}
+              </div>
 
-            <div className={styles.personagens}>
-              <button
-                type="button"
-                className={styles.mapa_saga}
-                onClick={() => setSelecionarTexto1("east-blue")}
-              >
-                MAPA
-              </button>
-              {mugiwaras.map((personagem) => (
-                <PersonImg
-                  key={personagem}
-                  qualImagens={selecionarTema}
-                  personagem={personagem}
-                  ClicouNoPersonagem={alteraTexto1}
-                />
-              ))}
+              <div className={styles.container__button}>
+                <button type="button">Voltar</button>
+                <button type="button">Próximo</button>
+              </div>
+
             </div>
           </div>
         </section>
@@ -67,25 +66,25 @@ export default function Home() {
         </section>
 
         <section className={`${styles.module} ${styles.content}`}>
-          <div className={styles.container}>
-            <Secoes qualTema={selecionarTema} qualTexto={selecionarTexto2} />
+          <div className={styles.manga}>
+            <div className={styles.container}>
+              <Secoes qualTema={selecionarTema} qualTexto={selecionarTexto2} ilha="east-blue"/>
+              <div className={styles.personagens}>
+                {adversarios.map((personagem) => (
+                  <PersonImg
+                    key={personagem}
+                    qualImagens={selecionarTema}
+                    personagem={personagem}
+                    ClicouNoPersonagem={alteraTexto2}
+                  />
+                ))}
+              </div>
 
-            <div className={styles.personagens}>
-              <button
-                type="button"
-                className={styles.mapa_saga}
-                onClick={() => setSelecionarTexto2("east-blue")}
-              >
-                MAPA
-              </button>
-              {adversarios.map((personagem) => (
-                <PersonImg
-                  key={personagem}
-                  qualImagens={selecionarTema}
-                  personagem={personagem}
-                  ClicouNoPersonagem={alteraTexto2}
-                />
-              ))}
+              <div className={styles.container__button}>
+                <button type="button">Voltar</button>
+                <button type="button">Próximo</button>
+              </div>
+
             </div>
           </div>
         </section>

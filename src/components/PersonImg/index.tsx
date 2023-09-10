@@ -24,11 +24,11 @@ export default function PersonImg({
     <>
       <Image
         key={id}
-        src={`/personagens/${personagem}.png`}
+        src={`/personagens/${qualImagens ? 'anime' : 'serie'}/${personagem}.jpg`}
         alt={personagem}
         title={personagem}
-        height={130}
-        width={50}
+        height={150}
+        width={80}
         className={styles.imagem}
         loading="lazy"
         onClick={handleClick}

@@ -1,9 +1,18 @@
 .imagem {
-  object-fit: contain;
+  object-fit: cover;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  filter: saturate(30%);
+  border: 1px solid #000;
 }
 
 .imagem:hover {
   transform: translateY(-10%);
+  filter: saturate(100%);
+}
+
+.imagem_active {
+  transform: translateY(-10%);
+  filter: saturate(100%);
+  filter: brightness(110%);
 }

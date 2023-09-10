@@ -1,223 +1,227 @@
-[
-  {
-    "id": "east-blue",
-    "name": "East Blue",
-    "funcao": "ilha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "Onde Fica?"
+{
+  "anime": {
+    "east_blue": {
+      "east-blue": {"id": "east-blue","name": "Saga East Blue","funcao": "ilha",
+          "arco": ["Romance Dawn","Orange Town","Vila Syrup","Baratie","Arlong Park","Loguetown"],
+          "cartaz": "east-blue"
         },
-        {
-          "imagem": "/ilhas/mapa-east-blue.jpg"
-        }
-      ],
-      "arco": [
-        "Romance Dawn",
-        "Orange Town",
-        "Vila Syrup",
-        "Baratie",
-        "Arlong Park",
-        "Loguetown"
-      ]
-    }
+      "luffy": {"id": "luffy","name": "Monkey D. Luffy","funcao": "Capitão | Chapéus de Palha",
+        "details": {
+          "fruta": "Gomu Gomu no Mi",
+          "arma": "Punhos - Pés - Chinelo",
+          "ator": "Luffy | Vagner Fagundes",
+          "cartaz": "luffy"
+        }},
+      "koby": {"id": "koby","name": "Koby","funcao": "Aprendiz de Marinheiro",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Em treinamento",
+          "ator": "Koby | Pedro Alcântra",
+          "cartaz": "imagem"
+        }},
+      "zoro": {"id": "zoro","name": "Roronoa Zoro","funcao": "Espadachim | Chapéus de Palha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "3 Espadas",
+          "ator": "Zoro | Glauco Marques",
+          "cartaz": "imagem"
+        }},
+      "shanks": {"id": "shanks","name": "Shanks","funcao": "Capitão | Piratas do Ruivo",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Espada",
+          "ator": "Shanks | Silvio Giraldi",
+          "cartaz": "imagem"
+        }},
+      "nami": {"id": "nami","name": "Nami","funcao": "Navegadora | Chapéus de Palha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Bastão",
+          "ator": "Nami | Tati Keplmair",
+          "cartaz": "imagem"
+        }},
+      "usopp": {"id": "usopp","name": "Usopp","funcao": "Atirador | Chapéus de Palha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Estilingue",
+          "ator": "Usopp | Adrian Tatini",
+          "cartaz": "imagem"
+        }},
+      "sanji": {"id": "sanji","name": "Vinsmoke Sanji","funcao": "Cozinheiro | Chapéus de Palha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Suas Pernas",
+          "ator": "Sanji | Wendell Bezerra",
+          "cartaz": "imagem"
+        }},
+      "goldroger": {"id": "goldroger","name": "Gold D. Roger","funcao": "Capitão | Piratas Roger",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Espada",
+          "ator": "Gold D. Roger | Jonas Mello",
+          "cartaz": "imagem"
+        }},
+      "morgan": {"id": "morgan","name": "Morgan","funcao": "Oficial | Marinha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Mão de Machado",
+          "ator": "Morgan Mão de Machado | Affonso Amajones",
+          "cartaz": "imagem"
+        }},
+        "garp": {"id": "garp","name": "Garp","funcao": "Vice Almirante | Marinha",
+          "details": {
+            "fruta": "Não Possui",
+            "arma": "Punho do Amor",
+            "ator": "Garp | ?",
+            "cartaz": "imagem"
+          }},
+      "mihawk": {"id": "mihawk","name": "Dracule Mihawk","funcao": "Espadachim | Shichibukai",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Espada",
+          "ator": "Dracule Mihawk | Luiz Antônio Lobue",
+          "cartaz": "imagem"
+        }},
+      "alvida": {"id": "alvida","name": "Alvida","funcao": "Capitã | Piratas Alvida",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Clava de Ferro",
+          "ator": "Alvida | Isaura Gomes",
+          "cartaz": "imagem"
+        }},
+      "buggy": {"id": "buggy","name": "Buggy, o Palhaço Estrela","funcao": "Capitão | Piratas do Buggy",
+        "details": {
+          "fruta": "Bara Bara no Mi",
+          "arma": "Facas",
+          "ator": "Buggy | Fábio de Castro",
+          "cartaz": "imagem"
+        }},
+      "kuro": {"id": "kuro","name": "Kuro dos Cem Planos","funcao": "Capitão | Piratas do Gato Preto",
+        "details": {
+          "fruta": "Gomu Gomu no Mi",
+          "arma": "Suas Garras",
+          "ator": "Kuro | Ricardo Sawaya",
+          "cartaz": "imagem"
+        }},
+      "arlong": {"id": "arlong","name": "Arlong, a Serra","funcao": "Capitão | Piratas Arlong",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Espada, Dentes e Homem Peixe",
+          "ator": "Arlong, a Serra | Vagner Fagundes",
+          "cartaz": "imagem"
+        }}}
   },
-  {
-    "id": "luffy",
-    "name": "Monkey D. Luffy",
-    "funcao": "Capitão | Chapéus de Palha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "Vô do Luffy"
+
+  "serie": {
+    "east_blue": {
+      "east-blue": {"id": "east-blue","name": "Saga East Blue","funcao": "ilha",
+          "arco": ["Romance Dawn","Orange Town","Vila Syrup","Baratie","Arlong Park","Loguetown"],
+          "cartaz": "east-blue"
         },
-        {
-          "imagem": "/personagens/garp.png"
-        }
-      ],
-      "fruta": "Gomu Gomu no Mi",
-      "arma": "Punhos - Pés - Chinelo",
-      "ator": "Luffy | Vagner Fagundes"
+      "luffy": {"id": "luffy","name": "Monkey D. Luffy","funcao": "Capitão | Chapéus de Palha",
+        "details": {
+          "fruta": "Gomu Gomu no Mi",
+          "arma": "Punhos - Pés - Chinelo",
+          "ator": "Luffy | Vagner Fagundes",
+          "cartaz": "luffy"
+        }},
+      "koby": {"id": "koby","name": "Koby","funcao": "Aprendiz de Marinheiro",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Em treinamento",
+          "ator": "Koby | Pedro Alcântra",
+          "cartaz": "imagem"
+        }},
+      "zoro": {"id": "zoro","name": "Roronoa Zoro","funcao": "Espadachim | Chapéus de Palha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "3 Espadas",
+          "ator": "Zoro | Glauco Marques",
+          "cartaz": "imagem"
+        }},
+      "shanks": {"id": "shanks","name": "Shanks","funcao": "Capitão | Piratas do Ruivo",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Espada",
+          "ator": "Shanks | Silvio Giraldi",
+          "cartaz": "imagem"
+        }},
+      "nami": {"id": "nami","name": "Nami","funcao": "Navegadora | Chapéus de Palha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Bastão",
+          "ator": "Nami | Tati Keplmair",
+          "cartaz": "imagem"
+        }},
+      "usopp": {"id": "usopp","name": "Usopp","funcao": "Atirador | Chapéus de Palha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Estilingue",
+          "ator": "Usopp | Adrian Tatini",
+          "cartaz": "imagem"
+        }},
+      "sanji": {"id": "sanji","name": "Vinsmoke Sanji","funcao": "Cozinheiro | Chapéus de Palha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Suas Pernas",
+          "ator": "Sanji | Wendell Bezerra",
+          "cartaz": "imagem"
+        }},
+      "goldroger": {"id": "goldroger","name": "Gold D. Roger","funcao": "Capitão | Piratas Roger",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Espada",
+          "ator": "Gold D. Roger | Jonas Mello",
+          "cartaz": "imagem"
+        }},
+      "morgan": {"id": "morgan","name": "Morgan","funcao": "Oficial | Marinha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Mão de Machado",
+          "ator": "Morgan Mão de Machado | Affonso Amajones",
+          "cartaz": "imagem"
+        }},
+      "garp": {"id": "garp","name": "Garp","funcao": "Vice Almirante | Marinha",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Punho do Amor",
+          "ator": "Garp | ?",
+          "cartaz": "imagem"
+        }},
+      "mihawk": {"id": "mihawk","name": "Dracule Mihawk","funcao": "Espadachim | Shichibukai",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Espada",
+          "ator": "Dracule Mihawk | Luiz Antônio Lobue",
+          "cartaz": "imagem"
+        }},
+      "alvida": {"id": "alvida","name": "Alvida","funcao": "Capitã | Piratas Alvida",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Clava de Ferro",
+          "ator": "Alvida | Isaura Gomes",
+          "cartaz": "imagem"
+        }},
+      "buggy": {"id": "buggy","name": "Buggy, o Palhaço Estrela","funcao": "Capitão | Piratas do Buggy",
+        "details": {
+          "fruta": "Bara Bara no Mi",
+          "arma": "Facas",
+          "ator": "Buggy | Fábio de Castro",
+          "cartaz": "imagem"
+        }},
+      "kuro": {"id": "kuro","name": "Kuro dos Cem Planos","funcao": "Capitão | Piratas do Gato Preto",
+        "details": {
+          "fruta": "Gomu Gomu no Mi",
+          "arma": "Suas Garras",
+          "ator": "Kuro | Ricardo Sawaya",
+          "cartaz": "imagem"
+        }},
+      "arlong": {"id": "arlong","name": "Arlong, a Serra","funcao": "Capitão | Piratas Arlong",
+        "details": {
+          "fruta": "Não Possui",
+          "arma": "Espada, Dentes e Homem Peixe",
+          "ator": "Arlong, a Serra | Vagner Fagundes",
+          "cartaz": "imagem"
+        }}}
     }
-  },
-  {
-    "id": "zoro",
-    "name": "Roronoa Zoro",
-    "funcao": "Espadachim | Chapéus de Palha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "Amiga de Infância"
-        },
-        {
-          "imagem": "/personagens/kuina.png"
-        }
-      ],
-      "fruta": "Não possui",
-      "arma": "3 Espadas",
-      "ator": "Zoro | Marcelo Campos"
-    }
-  },
-  {
-    "id": "nami",
-    "name": "Nami",
-    "funcao": "Navegadora | Chapéus de Palha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "Mãe Adotiva"
-        },
-        {
-          "imagem": "/personagens/garp.png"
-        }
-      ],
-      "fruta": "Não possui",
-      "arma": "Bastão",
-      "ator": "Nami | Samira Fernandes"
-    }
-  },
-  {
-    "id": "usopp",
-    "name": "Usopp",
-    "funcao": "Contador de Histórias | Chapéus de Palha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "Futura Namorada"
-        },
-        {
-          "imagem": "/personagens/garp.png"
-        }
-      ],
-      "fruta": "Não possui",
-      "arma": "Estilingue",
-      "ator": "Usopp | Adrian Tatini"
-    }
-  },
-  {
-    "id": "sanji",
-    "name": "Sanji",
-    "funcao": "Cozinheiro | Chapéus de Palha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "Chefe / Professor / 'Pai'"
-        },
-        {
-          "imagem": "/personagens/garp.png"
-        }
-      ],
-      "fruta": "Não possui",
-      "arma": "Pernas",
-      "ator": "Sanji | Wendel Bezerra"
-    }
-  },
-  {
-    "id": "alvida",
-    "name": "Alvida",
-    "funcao": "Capitã | Piratas Alvida",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "Faz tudo"
-        },
-        {
-          "imagem": "/personagens/koby.png"
-        }
-      ],
-      "fruta": "Não possui",
-      "arma": "Clava de Ferro",
-      "ator": "Alvida | Adriana Pissardini"
-    }
-  },
-  {
-    "id": "morgan",
-    "name": "Morgan Mão de Machado",
-    "funcao": "Oficial | Marinha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "filho"
-        },
-        {
-          "imagem": "/personagens/nome.png"
-        }
-      ],
-      "fruta": "Não possui",
-      "arma": "Mão de Machado",
-      "ator": "Morgan Mão de Machado | Antônio Moreno"
-    }
-  },
-  {
-    "id": "buggy",
-    "name": "Buggy, o Palhaço Estrela",
-    "funcao": "Capitão | Piratas do Buggy",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "amigo"
-        },
-        {
-          "imagem": "/personagens/shanks.png"
-        }
-      ],
-      "fruta": "Bara Bara no Mi",
-      "arma": "Facas",
-      "ator": "Buggy O Palhaço | Élcio Sodré"
-    }
-  },
-  {
-    "id": "garp",
-    "name": "Morgan Mão de Machado",
-    "funcao": "Vice Almirante | Marinha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "neto"
-        },
-        {
-          "imagem": "/personagens/luffy.png"
-        }
-      ],
-      "fruta": "Não possui",
-      "arma": "Punhos do Amor",
-      "ator": "Garp | Luiz Carlos de Moraes"
-    }
-  },
-  {
-    "id": "kuro",
-    "name": "Kuro",
-    "funcao": "Capitão  | Piratas do Gato Preto",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "patroa"
-        },
-        {
-          "imagem": "/personagens/nome.png"
-        }
-      ],
-      "fruta": "Hogo Hogo No Mi",
-      "arma": "Garras",
-      "ator": "Morgan Mão de Machado | Wellington Lima"
-    }
-  },
-  {
-    "id": "morgan",
-    "name": "Morgan Mão de Machado",
-    "funcao": "Oficial | Marinha",
-    "details": {
-      "curiosidade": [
-        {
-          "nome": "filho"
-        },
-        {
-          "imagem": "/personagens/nome.png"
-        }
-      ],
-      "fruta": "Não possui",
-      "arma": "Mão de Machado",
-      "ator": "Morgan Mão de Machado | Antônio Moreno"
-    }
-  }
-]
+}

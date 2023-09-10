@@ -1,28 +1,39 @@
-[
-  {
-    "east-blue": "A saga que marca o início de One Piece começa com o protagonista Monkey D. Luffy embarcando em seu bote em busca de se tornar o Rei dos Piratas. Na infância, ao acidentalmente comer uma fruta misteriosa que lhe concedeu poderes, Luffy segue sua jornada, encontrando diversos piratas, marinheiros e companheiros no início de sua vida de pirata.",
-    "luffy": "Na saga do East Blue, Luffy formou os Chapéus de Palha com Zoro, Nami, Usopp e Sanji. Enfrentaram a Marinha, o Baroque Works e Buggy, enquanto buscavam Poneglyphs e o One Piece. A saga atingiu seu clímax com a luta contra Arlong e a libertação de Nami de sua prisão.",
-    "zoro": "Zoro, também conhecido como Roronoa Zoro, é o espadachim talentoso e membro leal dos Chapéus de Palha liderados por Luffy. Ele é conhecido por sua determinação em se tornar o maior espadachim do mundo. Zoro utiliza um estilo de luta de três espadas chamado Santoryu e possui uma ambição feroz em cumprir sua promessa de superar o lendário Dracule Mihawk. Durante a saga do East Blue, Zoro foi recrutado por Luffy após ser libertado da prisão de Shell Town, e desde então, tem sido um dos pilares da tripulação na busca pelo One Piece.",
-    "nami": "Nami, uma excelente cartógrafa, se juntou aos Chapéus de Palha durante a saga do East Blue após superar sua conexão com o pirata Arlong.",
-    "usopp": "Usopp, um contador de histórias talentoso e atirador, tornou-se membro da tripulação durante a busca pela Going Merry.",
-    "sanji": "Sanji, o cozinheiro habilidoso, uniu-se aos Chapéus de Palha durante a saga Baratie após sua luta contra Gin.",
-    "alvida": "Alvida, uma ex-pirata temida, abandonou seu passado após seu encontro com Luffy e se tornou uma aliada improvável.",
-    "morgan": "Morgan, um corrupto capitão da Marinha, foi derrotado por Luffy no início da jornada.",
-    "buggy": "Buggy, um ex-membro da tripulação de Gol D. Roger, tornou-se um pirata que cruzou o caminho de Luffy diversas vezes.",
-    "garp": "Garp, conhecido como Punhos de Amor, é um vice-almirante da Marinha e avô de Luffy, que optou por não perseguir seu neto.",
-    "kuro": "Kuro, um ex-pirata infame, tentou uma última investida como capitão, mas foi derrotado por Luffy e sua tripulação no início da saga."
+{
+  "anime": {
+    "east_blue": {
+      "east-blue": "A saga que marca o início de One Piece começa com o protagonista Monkey D. Luffy embarcando em seu bote em busca de se tornar o Rei dos Piratas. Na infância, ao acidentalmente comer uma fruta misteriosa que lhe concedeu poderes, Luffy segue sua jornada, encontrando diversos piratas, marinheiros e companheiros no início de sua vida de pirata.",
+      "goldroger": "Diante da iminente execução, uma multidão perplexa testemunhou a figura sorridente do Rei dos Piratas, Gold Roger. Com sua última respiração, ele anunciou o lendário tesouro, o One Piece, como seu próprio, incitando que o primeiro a encontrar seu tesouro será dele, incentivando diversos piratas a procurar, começando assim uma revolução pirata a encontra do One Piece.",
+      "luffy": "Com seu chapéu de palha e um bote frágil de madeira que inicia a jornada de um pirata que seu sonho é ser o Rei dos Piratas. No seu caminho encontrando vários adversários como: a pirata Alvida, marinheiro Morgan, Buggy o Palhaço, Kuro, Arlong e outros. Conseguindo se virar do seu jeitinho e procurando companheiros para a sua futura tripulação de piratas.",
+      "koby": "Koby, um sonhador relutante, vivia como zelador sob o comando tirânico da capitã Alvida. Sua vida tediosa na ilha, entretanto, estava prestes a mudar quando um jovem pirata, Monkey D. Luffy, desembarcou, trazendo um novo sentido à sua jornada.",
+      "zoro": "Zoro, o destemido caçador de piratas de East Blue que utiliza três espadas, estava perambulava pelas tavernas, talvez perdido ou bebado. Enquanto ansiava por um duelo desafiador, ele não esquecia a promessa feita à sua amiga de infância, jurando tornar-se o maior espadachim do mundo.",
+      "shanks": "Shanks, o Ruivo, fez uma breve aparição em East Blue quando visitou a vila natal de Luffy e lhe deu seu chapéu de palha. Esse gesto inspirador motivou Luffy a seguir seu sonho de se tornar um pirata. Embora sua presença tenha sido efêmera, Shanks teve um impacto profundo na jornada de Luffy.",
+      "nami": "Nami, a ladra com um passado sombrio e sonho de fazer seu mapa mundi, encontrou-se com um pirata diferente dos demais, notando seu sorriso constante e sua personalidade divertida. Mas sendo da tripulação do tirano Arlong ela possivelmente está a enganar o garoto de chapeu de palha.",
+      "usopp": "Usopp, o contador de histórias talentoso e habilidoso atirador, tinha um sonho ardente de aventurar-se pelos mares. Um dia, ele contou uma história verdadeira para os cidadãos da vila, alertando sobre a verdadeira natureza do mordomo Kaya, que era um pirata malicioso. No entanto, os aldeões duvidaram de suas palavras, desconsiderando a ameaça iminente que pairava sobre eles.",
+      "sanji": "Sanji, um talentoso chef com uma paixão pela culinária, teve sua vida moldada pelo lendário pirata Zeff. Este último, conhecido por suas habilidades de combate com os pés e sua regra de não deixar ninguém passar fome, ensinou a Sanji a importância de alimentar o corpo e a alma. O sonho de Sanji era encontrar o All Blue, um lugar lendário onde todos os ingredientes dos oceanos se reuniriam, permitindo-lhe criar pratos extraordinários e satisfazer o paladar de todos. Enquanto galanteava e cozinhava a bordo do Thousand Sunny, ele continuava a busca por seu sonho e honrava as lições de Zeff.",
+      "alvida": "Alvida, líder cruel, submetia Koby a maus tratos. Seu domínio foi interrompido por um pirata de chapéu de palha, determinado a desafiar seus planos.",
+      "morgan": "Morgan, o cruel marinheiro, tinha um filho submisso, Helmeppo. Sua mão foi substituída após um acidente com seu machado. Ele enfrentou Luffy e Zoro em uma batalha desafiadora em East Blue",
+      "buggy": "Buggy, o hilário Palhaço dos Mares, cruzou seu caminho com Luffy durante uma batalha eletrizante em East Blue! Com sua habilidade de dividir seu corpo graças à fruta Bara Bara no Mi, ele causou confusão e risadas enquanto tentava derrotar o jovem pirata do chapéu de palha. Luffy, com sua tenacidade e sorriso desafiador, enfrentou as adversidades com determinação, transformando a luta em um espetáculo emocionante e cheio de diversão.",
+      "garp": "Garp, o lendário vice-almirante da Marinha, apareceu brevemente durante a saga East Blue. Ele é avô de Luffy e conhecido por sua força inigualável. Sua aparição deixou uma aura de mistério e intriga, pois ele era uma figura de autoridade que mantinha conexões profundas com os Piratas do Chapéu de Palha. Sua presença trouxe um toque de urgência à busca de Luffy pelo One Piece.",
+      "kuro": "Capitão Kuro, um mestre das artimanhas, se escondeu sob uma identidade falsa como mordomo de Kaya, uma jovem rica e gentil. No entanto, sua máscara de amabilidade escondeu uma trama sinistra para roubar a fortuna dela. Luffy e sua tripulação enfrentaram Kuro em uma batalha épica, onde ele revelou sua verdadeira natureza como um dos Piratas Black Cat."
+    }
   },
-  {
-    "east-blue": "A saga que marca o início de One Piece começa com o protagonista Monkey D. Luffy embarcando em seu bote em busca de se tornar o Rei dos Piratas. Na infância, ao acidentalmente comer uma fruta misteriosa que lhe concedeu poderes, Luffy segue sua jornada, encontrando diversos piratas, marinheiros e companheiros no início de sua vida de pirata.",
-    "luffy": "Texto do Luffy",
-    "zoro": "Texto do Zoro",
-    "nami": "Texto do Nami",
-    "usopp": "Texto do Usopp",
-    "sanji": "Texto do Sanji",
-    "alvida": "Texto da Alvida",
-    "morgan": "Texto da Alvida",
-    "buggy": "Texto da Alvida",
-    "garp": "Texto da Alvida",
-    "kuro": "Texto da Alvida"
+
+  "serie": {
+    "east_blue": {
+      "east-blue": "A saga que marca o início de One Piece começa com o protagonista Monkey D. Luffy embarcando em seu bote em busca de se tornar o Rei dos Piratas. Na infância, ao acidentalmente comer uma fruta misteriosa que lhe concedeu poderes, Luffy segue sua jornada, encontrando diversos piratas, marinheiros e companheiros no início de sua vida de pirata.",
+      "goldroger": "Diante da iminente execução, uma multidão perplexa testemunhou a figura sorridente do Rei dos Piratas, Gold Roger. Com sua última respiração, ele anunciou o lendário tesouro, o One Piece, como seu próprio, incitando que o primeiro a encontrar seu tesouro será dele, incentivando diversos piratas a procurar, começando assim uma revolução pirata a encontra do One Piece.",
+      "luffy": "Com seu chapéu de palha e um bote frágil de madeira que inicia a jornada de um pirata que seu sonho é ser o Rei dos Piratas. No seu caminho encontrando vários adversários como: a pirata Alvida, marinheiro Morgan, Buggy o Palhaço, Kuro, Arlong e outros. Conseguindo se virar do seu jeitinho e procurando companheiros para a sua futura tripulação de piratas.",
+      "koby": "Koby, um sonhador relutante, vivia como zelador sob o comando tirânico da capitã Alvida. Sua vida tediosa na ilha, entretanto, estava prestes a mudar quando um jovem pirata, Monkey D. Luffy, desembarcou, trazendo um novo sentido à sua jornada.",
+      "zoro": "Zoro, o destemido caçador de piratas de East Blue que utiliza três espadas, estava perambulava pelas tavernas, talvez perdido ou bebado. Enquanto ansiava por um duelo desafiador, ele não esquecia a promessa feita à sua amiga de infância, jurando tornar-se o maior espadachim do mundo.",
+      "shanks": "Shanks, o Ruivo, fez uma breve aparição em East Blue quando visitou a vila natal de Luffy e lhe deu seu chapéu de palha. Esse gesto inspirador motivou Luffy a seguir seu sonho de se tornar um pirata. Embora sua presença tenha sido efêmera, Shanks teve um impacto profundo na jornada de Luffy.",
+      "nami": "Nami, a ladra com um passado sombrio e sonho de fazer seu mapa mundi, encontrou-se com um pirata diferente dos demais, notando seu sorriso constante e sua personalidade divertida. Mas sendo da tripulação do tirano Arlong ela possivelmente está a enganar o garoto de chapeu de palha.",
+      "usopp": "Usopp, o contador de histórias talentoso e habilidoso atirador, tinha um sonho ardente de aventurar-se pelos mares. Um dia, ele contou uma história verdadeira para os cidadãos da vila, alertando sobre a verdadeira natureza do mordomo Kaya, que era um pirata malicioso. No entanto, os aldeões duvidaram de suas palavras, desconsiderando a ameaça iminente que pairava sobre eles.",
+      "sanji": "Sanji, um talentoso chef com uma paixão pela culinária, teve sua vida moldada pelo lendário pirata Zeff. Este último, conhecido por suas habilidades de combate com os pés e sua regra de não deixar ninguém passar fome, ensinou a Sanji a importância de alimentar o corpo e a alma. O sonho de Sanji era encontrar o All Blue, um lugar lendário onde todos os ingredientes dos oceanos se reuniriam, permitindo-lhe criar pratos extraordinários e satisfazer o paladar de todos. Enquanto galanteava e cozinhava a bordo do Thousand Sunny, ele continuava a busca por seu sonho e honrava as lições de Zeff.",
+      "alvida": "Alvida, líder cruel, submetia Koby a maus tratos. Seu domínio foi interrompido por um pirata de chapéu de palha, determinado a desafiar seus planos.",
+      "morgan": "Morgan, o cruel marinheiro, tinha um filho submisso, Helmeppo. Sua mão foi substituída após um acidente com seu machado. Ele enfrentou Luffy e Zoro em uma batalha desafiadora em East Blue",
+      "buggy": "Buggy, o hilário Palhaço dos Mares, cruzou seu caminho com Luffy durante uma batalha eletrizante em East Blue! Com sua habilidade de dividir seu corpo graças à fruta Bara Bara no Mi, ele causou confusão e risadas enquanto tentava derrotar o jovem pirata do chapéu de palha. Luffy, com sua tenacidade e sorriso desafiador, enfrentou as adversidades com determinação, transformando a luta em um espetáculo emocionante e cheio de diversão.",
+      "garp": "Garp, o lendário vice-almirante da Marinha, apareceu brevemente durante a saga East Blue. Ele é avô de Luffy e conhecido por sua força inigualável. Sua aparição deixou uma aura de mistério e intriga, pois ele era uma figura de autoridade que mantinha conexões profundas com os Piratas do Chapéu de Palha. Sua presença trouxe um toque de urgência à busca de Luffy pelo One Piece.",
+      "kuro": "Capitão Kuro, um mestre das artimanhas, se escondeu sob uma identidade falsa como mordomo de Kaya, uma jovem rica e gentil. No entanto, sua máscara de amabilidade escondeu uma trama sinistra para roubar a fortuna dela. Luffy e sua tripulação enfrentaram Kuro em uma batalha épica, onde ele revelou sua verdadeira natureza como um dos Piratas Black Cat."
+    }
   }
-]
+}

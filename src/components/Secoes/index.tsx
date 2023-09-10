@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { melindaFont, ptSerif, arvo } from "@/fonts";
 import Image from "next/image";
@@ -7,25 +5,55 @@ import styles from "./secoes.module.css";
 import textoApi from "@/app/api/texts.json";
 import detalhesApi from "@/app/api/detalhesOnePiece.json";
 
+interface Personagem {
+  id: string;
+  name: string;
+  funcao: string;
+  arco?: string[];
+  details: {
+    fruta: string;
+    arma: string;
+    ator: string;
+    cartaz?: string;
+  };
+}
+
 interface SecoesProps {
   qualTema: boolean;
   qualTexto: string;
+  ilha: string;
 }
 
-export default function Secoes({ qualTema, qualTexto }: SecoesProps) {
-  const id = qualTema ? 0 : 1;
-  function encontrarPorNome(qualTexto: string) {
-    return detalhesApi.find((item) => item.id === qualTexto);
+export default function Secoes({ qualTema, qualTexto, ilha }: SecoesProps) {
+  const personagem = encontrarPorNome(qualTexto, qualTema);
+  const textoData = qualTema ? textoApi.anime.east_blue : textoApi.serie.east_blue;
+
+  function encontrarPorNome(
+    nome: string,
+    tema: boolean
+  ): Personagem | null {
+    const temaData = tema ? detalhesApi.anime.east_blue : detalhesApi.serie.east_blue;
+    const temaKey = qualTexto as keyof typeof temaData;
+    console.log(temaKey)
+    const dados = (temaData[temaKey] as Personagem)
+    // console.log(dados)
+
+    if (dados.id === nome) {
+      return (temaData[temaKey] as Personagem);
+    }
+    return null;
   }
 
-  const personagem = encontrarPorNome(qualTexto);
+  if (!personagem) {
+    return <p>Personagem/Ilha não Encontrado</p>;
+  }
 
   return (
-    <>
+    <div>
       <h2 className={`${melindaFont.className} ${styles.title}`}>
-        Saga East Blue
+        {personagem.name}
         <Image
-          src="/mugiwaras/going-merry.png"
+          src="/personagens/going-merry.png"
           alt="going-merry"
           width={50}
           height={50}
@@ -34,71 +62,50 @@ export default function Secoes({ qualTema, qualTexto }: SecoesProps) {
         />
       </h2>
 
-      <p className={`${arvo.className} ${styles.text}`}>
-        {(textoApi[id] as Record<string, string>)[qualTexto]}
-      </p>
+      <div className={styles.content}>
+        <Image
+          src={`/imagemInfo/${qualTema ? 'anime' : 'serie'}/${personagem.id}.jpg`}
+          alt={personagem.name}
+          width={150}
+          height={150}
+          loading="lazy"
+        />
 
-      {personagem ? (
-        <div className={styles.infomacoes_adicionais}>
-          {personagem.funcao === "ilha" ? (
-            <div>
-              <h4
-                className={`${ptSerif.className} ${styles.titulo__descricao}`}
-              >
-                Arcos da História
-              </h4>
-              {personagem.details.arco ? (
-                <ul className={`${arvo.className} ${styles.descricao}`}>
-                  {personagem.details.arco.map((arco) => (
-                    <li key={arco}>{arco}</li>
-                  ))}
-                </ul>
-              ) : (
-                ""
-              )}
-            </div>
+        <p className={`${arvo.className} ${styles.text}`}>
+          {(textoData as Record<string, string>)[qualTexto]}
+        </p>
+      </div>
+
+      <div className={styles.infomacoes_adicionais}>
+
+      <div>
+        <h4 className={`${ptSerif.className} ${styles.titulo__descricao}`}>
+          {personagem.funcao === 'ilha' ? "Arcos" : "Detalhes"}
+        </h4>
+        <ul className={`${arvo.className} ${styles.descricao}`}>
+          {personagem.funcao === 'ilha' ? (
+            personagem.arco?.map((item, index) => <li key={index}>{item}</li>)
           ) : (
-            <div>
-              <h4
-                className={`${ptSerif.className} ${styles.titulo__descricao}`}
-              >
-                Detalhes
-              </h4>
-              <ul className={`${arvo.className} ${styles.descricao}`}>
-                <li>
-                  <strong>Função:</strong> {personagem.funcao}
-                </li>
-                <li>
-                  <strong>Fruta:</strong> {personagem.details.fruta}
-                </li>
-                <li>
-                  <strong>Arma:</strong> {personagem.details.arma}
-                </li>
-                <li>
-                  <strong>Ator/Dublador:</strong> {personagem.details.ator}
-                </li>
-              </ul>
-            </div>
+            <>
+              <li><strong>Função:</strong> {personagem.funcao}</li>
+              <li><strong>Fruta:</strong> {personagem.details.fruta}</li>
+              <li><strong>Arma:</strong> {personagem.details.arma}</li>
+              <li><strong>Ator/Dublador:</strong> {personagem.details.ator}</li>
+            </>
           )}
-          <div>
-            <h4 className={`${ptSerif.className} ${styles.titulo__descricao}`}>
-              Curiosidade
-            </h4>
-            <h6 className={`${ptSerif.className} ${styles.titulo__descricao}`}>
-              Onde Fica?
-            </h6>
-            <Image
-              src={"/ilhas/mapa-east-blue.jpg"}
-              alt="Onde Fica?"
-              width={200}
-              height={200}
-              loading="lazy"
-            />
-          </div>
+        </ul>
+      </div>
+
+        <div className={styles.cartaz}>
+          <Image
+            src={`/personagens/${qualTema ? 'anime' : 'serie'}/cartaz/${personagem.id}.png`}
+            alt={`Cartaz Do ${personagem.name}`}
+            width={120}
+            height={150}
+            loading="lazy"
+          />
         </div>
-      ) : (
-        "Personagem/Ilha não Encontrado"
-      )}
-    </>
+      </div>
+    </div>
   );
 }
