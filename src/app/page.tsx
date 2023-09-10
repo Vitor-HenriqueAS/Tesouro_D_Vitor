@@ -10,12 +10,29 @@ export default function Home() {
   const [selecionarTema, setselecionarTema] = useState(true);
   const [selecionarTexto1, setSelecionarTexto1] = useState<string>("east-blue");
   const [selecionarTexto2, setSelecionarTexto2] = useState<string>("alvida");
+  const [companheiroIndex, setCompanheiroIndex] = useState(0);
+  const [adversarioIndex, setAdversarioIndex] = useState(0);
   const companheiros = ["east-blue","goldroger","luffy","koby","zoro","shanks","nami","usopp","sanji",];
   const adversarios = ["alvida", "morgan", "buggy", "garp", "kuro", "mihawk", "arlong"];
 
   const alterarTema = () => setselecionarTema(!selecionarTema);
   const alteraTexto1 = (personagem: string) => setSelecionarTexto1(personagem);
   const alteraTexto2 = (personagem: string) => setSelecionarTexto2(personagem);
+  const alteraCompanheiro = (botao: boolean) => {
+    botao ?
+    (companheiroIndex < companheiros.length - 1) ? setCompanheiroIndex(companheiroIndex + 1) : null
+    :
+    (companheiroIndex > 0) ? setCompanheiroIndex(companheiroIndex - 1) : null
+    setSelecionarTexto1(companheiros[companheiroIndex])
+  };
+
+  const alteraAdversario = (botao: boolean) => {
+    botao ?
+    (adversarioIndex < adversarios.length - 1) ? setAdversarioIndex(adversarioIndex + 1) : null
+    :
+    (adversarioIndex > 0) ? setAdversarioIndex(adversarioIndex - 1) : null
+    setSelecionarTexto2(adversarios[adversarioIndex])
+  };
 
   return (
     <>
@@ -51,8 +68,8 @@ export default function Home() {
               </div>
 
               <div className={styles.container__button}>
-                <button type="button">Voltar</button>
-                <button type="button">Próximo</button>
+                <button type="button" onClick={() => alteraCompanheiro(false)}>Voltar</button>
+                <button type="button" onClick={() => alteraCompanheiro(true)}>Próximo</button>
               </div>
 
             </div>
@@ -81,8 +98,8 @@ export default function Home() {
               </div>
 
               <div className={styles.container__button}>
-                <button type="button">Voltar</button>
-                <button type="button">Próximo</button>
+                <button type="button" onClick={() => alteraAdversario(false)}>Voltar</button>
+                <button type="button" onClick={() => alteraAdversario(true)}>Próximo</button>
               </div>
 
             </div>
