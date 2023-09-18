@@ -30,38 +30,37 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
   const textoData = qualTema ? textoApi.anime.east_blue : textoApi.serie.east_blue;
 
   useEffect(() => {
+    // Move a definição da função encontrarPorNome para dentro do useEffect
+    async function encontrarPorNome(nome: string, tema: boolean): Promise<Personagem | null> {
+      try {
+        const temaData = tema ? detalhesApi.anime.east_blue : detalhesApi.serie.east_blue;
+        const temaKey = qualTexto as keyof typeof temaData;
+        const dados = temaData[temaKey] as Personagem;
+
+        if (dados.id === nome) {
+          return dados;
+        }
+
+        return null;
+      } catch (error) {
+        throw new Error("Erro ao buscar dados do personagem/ilha.");
+      }
+    }
+
     async function fetchData() {
       try {
+        setIsLoading(true); 
         const data = await encontrarPorNome(qualTexto, qualTema);
         setPersonagem(data);
         contentLoaded();
+        
       } catch (error) {
         console.error("Erro ao buscar dados:", error);
       }
     }
 
     fetchData();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [qualTexto, qualTema]);
-
-  async function encontrarPorNome(
-    nome: string,
-    tema: boolean
-  ): Promise<Personagem | null> {
-    try {
-      const temaData = tema ? detalhesApi.anime.east_blue : detalhesApi.serie.east_blue;
-      const temaKey = qualTexto as keyof typeof temaData;
-      const dados = temaData[temaKey] as Personagem;
-
-      if (dados.id === nome) {
-        return dados;
-      }
-
-      return null;
-    } catch (error) {
-      throw new Error("Erro ao buscar dados do personagem/ilha.");
-    }
-  }
 
   const contentLoaded = () => {
     setIsLoading(false);
@@ -70,6 +69,14 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
   if (!personagem) {
     return (
       <div>
+        <Image 
+          src={'/carregamento/content.gif'}
+          alt="Carregamento"
+          width={500}
+          height={200}
+          loading="lazy"
+          className={styles.carregamento_conteudo}
+        />
         Personagem/Ilha não Encontrado
       </div>
     )
