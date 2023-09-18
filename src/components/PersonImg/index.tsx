@@ -1,6 +1,4 @@
-"use client";
-
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./imagem.module.css";
 
@@ -15,9 +13,26 @@ export default function PersonImg({
   personagem,
   ClicouNoPersonagem,
 }: ImagensProps) {
+  const [imageActive, setImageActive] = useState(false);
   const id = qualImagens ? 0 : 1;
+
   const handleClick = () => {
+    // Selecionar todos os elementos com a classe .imagem_active
+    const imgActPersons = document.querySelectorAll(`.${styles.imagem_active}`);
+    
+    // Remover a classe .imagem_active de todos os elementos
+    imgActPersons.forEach((elemento) => {
+      elemento.classList.remove(styles.imagem_active);
+    });
+
+    // Adicionar a classe .imagem_active ao elemento atual
+    const elementoAtual = document.querySelector(`#personagem-${personagem}`);
+    if (elementoAtual) {
+      elementoAtual.classList.add(styles.imagem_active);
+    }
+
     ClicouNoPersonagem(personagem);
+    setImageActive(true);
   };
 
   return (
@@ -29,9 +44,11 @@ export default function PersonImg({
         title={personagem}
         height={150}
         width={80}
-        className={styles.imagem}
+        className={`${styles.imagem} 
+        ${imageActive ? styles.imagem_active : ''}`}
         loading="lazy"
         onClick={handleClick}
+        id={`personagem-${personagem}`} // Adicionar um ID único baseado em personagem
       />
     </>
   );
