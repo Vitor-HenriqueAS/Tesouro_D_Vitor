@@ -1,4 +1,4 @@
-import Secoes from "@/components/Secoes";
+import SectionContent from "@/components/SectionContent";
 import PersonImg from "@/components/PersonImg";
 import styles from "./section.module.css";
 
@@ -21,7 +21,7 @@ export default function Section({
     <section className={`${styles.module} ${styles.content}`}>
       <div className={styles.manga}>
         <div className={styles.container}>
-          <Secoes qualTema={qualTema} qualTexto={qualTexto} ilha="east-blue" />
+          <SectionContent qualTema={qualTema} qualTexto={qualTexto} ilha="east-blue" />
           <div className={styles.personagens}>
             {personagens.map((personagem) => (
               <PersonImg

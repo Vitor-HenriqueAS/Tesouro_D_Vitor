@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { melindaFont, ptSerif, arvo } from "@/fonts";
 import Image from "next/image";
 import styles from "./secoes.module.css";
@@ -24,30 +24,70 @@ interface SecoesProps {
   ilha: string;
 }
 
-export default function Secoes({ qualTema, qualTexto, ilha }: SecoesProps) {
-  const personagem = encontrarPorNome(qualTexto, qualTema);
+export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProps) {
+  const [isLoading, setIsLoading] = useState(true);
+  const [personagem, setPersonagem] = useState<Personagem | null>(null);
   const textoData = qualTema ? textoApi.anime.east_blue : textoApi.serie.east_blue;
 
-  function encontrarPorNome(
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await encontrarPorNome(qualTexto, qualTema);
+        setPersonagem(data);
+        contentLoaded();
+      } catch (error) {
+        console.error("Erro ao buscar dados:", error);
+      }
+    }
+
+    fetchData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [qualTexto, qualTema]);
+
+  async function encontrarPorNome(
     nome: string,
     tema: boolean
-  ): Personagem | null {
-    const temaData = tema ? detalhesApi.anime.east_blue : detalhesApi.serie.east_blue;
-    const temaKey = qualTexto as keyof typeof temaData;
-    const dados = (temaData[temaKey] as Personagem)
-    // console.log(dados)
+  ): Promise<Personagem | null> {
+    try {
+      const temaData = tema ? detalhesApi.anime.east_blue : detalhesApi.serie.east_blue;
+      const temaKey = qualTexto as keyof typeof temaData;
+      const dados = temaData[temaKey] as Personagem;
 
-    if (dados.id === nome) {
-      return (temaData[temaKey] as Personagem);
+      if (dados.id === nome) {
+        return dados;
+      }
+
+      return null;
+    } catch (error) {
+      throw new Error("Erro ao buscar dados do personagem/ilha.");
     }
-    return null;
   }
 
+  const contentLoaded = () => {
+    setIsLoading(false);
+  };
+
   if (!personagem) {
-    return <p>Personagem/Ilha não Encontrado</p>;
+    return (
+      <div>
+        Personagem/Ilha não Encontrado
+      </div>
+    )
   }
 
   return (
+    <>
+      {isLoading ? 
+        <Image 
+          src={'/carregamento/content.gif'}
+          alt="Carregamento"
+          width={500}
+          height={200}
+          loading="lazy"
+          className={styles.carregamento_conteudo}
+        />
+      :
+      
     <div>
       <h2 className={`${melindaFont.className} ${styles.title}`}>
         {personagem.name}
@@ -106,5 +146,7 @@ export default function Secoes({ qualTema, qualTexto, ilha }: SecoesProps) {
         </div>
       </div>
     </div>
+    }
+    </>
   );
 }

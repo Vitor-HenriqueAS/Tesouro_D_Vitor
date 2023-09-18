@@ -45,6 +45,11 @@
   padding: 2px 0;
 }
 
+.carregamento_conteudo {
+  width: 100%;
+  opacity: 0.5;
+}
+
 @keyframes balanco {
   0% {
     transform: rotate(0deg);
