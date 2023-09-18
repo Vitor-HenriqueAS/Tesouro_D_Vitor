@@ -30,35 +30,34 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
   const textoData = qualTema ? textoApi.anime.east_blue : textoApi.serie.east_blue;
 
   useEffect(() => {
-    // Move a definição da função encontrarPorNome para dentro do useEffect
     async function encontrarPorNome(nome: string, tema: boolean): Promise<Personagem | null> {
       try {
         const temaData = tema ? detalhesApi.anime.east_blue : detalhesApi.serie.east_blue;
         const temaKey = qualTexto as keyof typeof temaData;
         const dados = temaData[temaKey] as Personagem;
-
+  
         if (dados.id === nome) {
           return dados;
         }
-
+  
         return null;
       } catch (error) {
         throw new Error("Erro ao buscar dados do personagem/ilha.");
       }
     }
-
+  
     async function fetchData() {
       try {
         setIsLoading(true); 
         const data = await encontrarPorNome(qualTexto, qualTema);
         setPersonagem(data);
-        contentLoaded();
-        
+        setIsLoading(false);
       } catch (error) {
         console.error("Erro ao buscar dados:", error);
+        setIsLoading(false);
       }
     }
-
+  
     fetchData();
   }, [qualTexto, qualTema]);
 
