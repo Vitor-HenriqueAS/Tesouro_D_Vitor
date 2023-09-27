@@ -84,6 +84,12 @@ export default function Home() {
           alteraPersonagem={(botao: boolean) => alteraPersonagem(false, botao)}
         />
         </section>
+
+        <footer>
+          <a href="https://portifolio-vitor-henriqueas.vercel.app/" target='_blank'>
+          &copy; 2023 | Vitor-Henriqueas
+          </a>
+      </footer>
       </main>
     </>
   );

@@ -3,3 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+footer {
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+}
+
+footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

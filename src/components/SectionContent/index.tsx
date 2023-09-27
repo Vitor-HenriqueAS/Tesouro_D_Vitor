@@ -35,46 +35,49 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
         const temaData = tema ? detalhesApi.anime.east_blue : detalhesApi.serie.east_blue;
         const temaKey = qualTexto as keyof typeof temaData;
         const dados = temaData[temaKey] as Personagem;
-  
+
         if (dados.id === nome) {
           return dados;
         }
-  
+
         return null;
       } catch (error) {
         throw new Error("Erro ao buscar dados do personagem/ilha.");
       }
     }
-  
+
     async function fetchData() {
       try {
-        setIsLoading(true); 
+        setIsLoading(true); // Set loading to true before fetching data
         const data = await encontrarPorNome(qualTexto, qualTema);
         setPersonagem(data);
-        setIsLoading(false);
+        setIsLoading(false); // Set loading to false when data is fetched
       } catch (error) {
         console.error("Erro ao buscar dados:", error);
-        setIsLoading(false);
+        setIsLoading(false); // Set loading to false in case of an error
       }
     }
-  
+
     fetchData();
   }, [qualTexto, qualTema]);
 
   if (!personagem) {
     return (
       <div>
-        <Image 
-          src={'/carregamento/content.gif'}
-          alt="Carregamento"
-          width={500}
-          height={200}
-          loading="lazy"
-          className={styles.carregamento_conteudo}
-        />
-        Personagem/Ilha não Encontrado
+        {isLoading ? ( // Display loading spinner if isLoading is true
+          <Image
+            src={'/carregamento/content.gif'}
+            alt="Carregamento"
+            width={500}
+            height={200}
+            loading="lazy"
+            className={styles.carregamento_conteudo}
+          />
+        ) : (
+          "Personagem/Ilha não Encontrado"
+        )}
       </div>
-    )
+    );
   }
 
   return (
