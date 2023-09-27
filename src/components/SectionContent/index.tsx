@@ -71,7 +71,7 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
       <div>
         {isLoading ? ( // Display loading spinner if isLoading is true
           <Image
-            src={'/carregamento/content.gif'}
+            src={'/content.gif'}
             alt="Carregamento"
             width={500}
             height={200}
@@ -89,7 +89,7 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
     <>
       {isLoading ? 
         <Image 
-          src={'/carregamento/content.gif'}
+          src={'/content.gif'}
           alt="Carregamento"
           width={500}
           height={200}
