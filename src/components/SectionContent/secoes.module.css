@@ -45,6 +45,11 @@
   padding: 2px 0;
 }
 
+.cartaz {
+  width: 120px;
+  height: 150px;
+}
+
 .carregamento_conteudo {
   width: 100%;
   opacity: 0.5;

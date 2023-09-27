@@ -42,8 +42,8 @@ export default function PersonImg({
         src={`/personagens/${qualImagens ? 'anime' : 'serie'}/${personagem}.jpg`}
         alt={personagem}
         title={personagem}
-        height={150}
         width={80}
+        height={150}
         className={`${styles.imagem} 
         ${imageActive ? styles.imagem_active : ''}`}
         loading="lazy"

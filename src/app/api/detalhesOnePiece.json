@@ -17,98 +17,98 @@
           "fruta": "Não Possui",
           "arma": "Em treinamento",
           "ator": "Koby | Pedro Alcântra",
-          "cartaz": "imagem"
+          "cartaz": "marinha"
         }},
       "zoro": {"id": "zoro","name": "Roronoa Zoro","funcao": "Espadachim | Chapéus de Palha",
         "details": {
           "fruta": "Não Possui",
           "arma": "3 Espadas",
           "ator": "Zoro | Glauco Marques",
-          "cartaz": "imagem"
+          "cartaz": "sem-recompensa"
         }},
       "shanks": {"id": "shanks","name": "Shanks","funcao": "Capitão | Piratas do Ruivo",
         "details": {
           "fruta": "Não Possui",
           "arma": "Espada",
           "ator": "Shanks | Silvio Giraldi",
-          "cartaz": "imagem"
+          "cartaz": "shanks"
         }},
       "nami": {"id": "nami","name": "Nami","funcao": "Navegadora | Chapéus de Palha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Bastão",
           "ator": "Nami | Tati Keplmair",
-          "cartaz": "imagem"
+          "cartaz": "sem-recompensa"
         }},
       "usopp": {"id": "usopp","name": "Usopp","funcao": "Atirador | Chapéus de Palha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Estilingue",
           "ator": "Usopp | Adrian Tatini",
-          "cartaz": "imagem"
+          "cartaz": "sem-recompensa"
         }},
       "sanji": {"id": "sanji","name": "Vinsmoke Sanji","funcao": "Cozinheiro | Chapéus de Palha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Suas Pernas",
           "ator": "Sanji | Wendell Bezerra",
-          "cartaz": "imagem"
+          "cartaz": "sem-recompensa"
         }},
       "goldroger": {"id": "goldroger","name": "Gold D. Roger","funcao": "Capitão | Piratas Roger",
         "details": {
           "fruta": "Não Possui",
           "arma": "Espada",
           "ator": "Gold D. Roger | Jonas Mello",
-          "cartaz": "imagem"
+          "cartaz": "goldroger"
         }},
       "morgan": {"id": "morgan","name": "Morgan","funcao": "Oficial | Marinha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Mão de Machado",
           "ator": "Morgan Mão de Machado | Affonso Amajones",
-          "cartaz": "imagem"
+          "cartaz": "marinha"
         }},
         "garp": {"id": "garp","name": "Garp","funcao": "Vice Almirante | Marinha",
           "details": {
             "fruta": "Não Possui",
             "arma": "Punho do Amor",
             "ator": "Garp | ?",
-            "cartaz": "imagem"
+            "cartaz": "marinha"
           }},
       "mihawk": {"id": "mihawk","name": "Dracule Mihawk","funcao": "Espadachim | Shichibukai",
         "details": {
           "fruta": "Não Possui",
           "arma": "Espada",
           "ator": "Dracule Mihawk | Luiz Antônio Lobue",
-          "cartaz": "imagem"
+          "cartaz": "mihawk"
         }},
       "alvida": {"id": "alvida","name": "Alvida","funcao": "Capitã | Piratas Alvida",
         "details": {
           "fruta": "Não Possui",
           "arma": "Clava de Ferro",
           "ator": "Alvida | Isaura Gomes",
-          "cartaz": "imagem"
+          "cartaz": "alvida"
         }},
       "buggy": {"id": "buggy","name": "Buggy, o Palhaço Estrela","funcao": "Capitão | Piratas do Buggy",
         "details": {
           "fruta": "Bara Bara no Mi",
           "arma": "Facas",
           "ator": "Buggy | Fábio de Castro",
-          "cartaz": "imagem"
+          "cartaz": "buggy"
         }},
       "kuro": {"id": "kuro","name": "Kuro dos Cem Planos","funcao": "Capitão | Piratas do Gato Preto",
         "details": {
           "fruta": "Gomu Gomu no Mi",
           "arma": "Suas Garras",
           "ator": "Kuro | Ricardo Sawaya",
-          "cartaz": "imagem"
+          "cartaz": "kuro"
         }},
       "arlong": {"id": "arlong","name": "Arlong, a Serra","funcao": "Capitão | Piratas Arlong",
         "details": {
           "fruta": "Não Possui",
           "arma": "Espada, Dentes e Homem Peixe",
           "ator": "Arlong, a Serra | Vagner Fagundes",
-          "cartaz": "imagem"
+          "cartaz": "arlong"
         }}}
   },
 
@@ -130,98 +130,98 @@
           "fruta": "Não Possui",
           "arma": "Em treinamento",
           "ator": "Koby | Pedro Alcântra",
-          "cartaz": "imagem"
+          "cartaz": "marinha"
         }},
       "zoro": {"id": "zoro","name": "Roronoa Zoro","funcao": "Espadachim | Chapéus de Palha",
         "details": {
           "fruta": "Não Possui",
           "arma": "3 Espadas",
           "ator": "Zoro | Glauco Marques",
-          "cartaz": "imagem"
+          "cartaz": "sem-recompensa"
         }},
       "shanks": {"id": "shanks","name": "Shanks","funcao": "Capitão | Piratas do Ruivo",
         "details": {
           "fruta": "Não Possui",
           "arma": "Espada",
           "ator": "Shanks | Silvio Giraldi",
-          "cartaz": "imagem"
+          "cartaz": "shanks"
         }},
       "nami": {"id": "nami","name": "Nami","funcao": "Navegadora | Chapéus de Palha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Bastão",
           "ator": "Nami | Tati Keplmair",
-          "cartaz": "imagem"
+          "cartaz": "sem-recompensa"
         }},
       "usopp": {"id": "usopp","name": "Usopp","funcao": "Atirador | Chapéus de Palha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Estilingue",
           "ator": "Usopp | Adrian Tatini",
-          "cartaz": "imagem"
+          "cartaz": "sem-recompensa"
         }},
       "sanji": {"id": "sanji","name": "Vinsmoke Sanji","funcao": "Cozinheiro | Chapéus de Palha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Suas Pernas",
           "ator": "Sanji | Wendell Bezerra",
-          "cartaz": "imagem"
+          "cartaz": "sem-recompensa"
         }},
       "goldroger": {"id": "goldroger","name": "Gold D. Roger","funcao": "Capitão | Piratas Roger",
         "details": {
           "fruta": "Não Possui",
           "arma": "Espada",
           "ator": "Gold D. Roger | Jonas Mello",
-          "cartaz": "imagem"
+          "cartaz": "goldroger"
         }},
       "morgan": {"id": "morgan","name": "Morgan","funcao": "Oficial | Marinha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Mão de Machado",
           "ator": "Morgan Mão de Machado | Affonso Amajones",
-          "cartaz": "imagem"
+          "cartaz": "marinha"
         }},
       "garp": {"id": "garp","name": "Garp","funcao": "Vice Almirante | Marinha",
         "details": {
           "fruta": "Não Possui",
           "arma": "Punho do Amor",
           "ator": "Garp | ?",
-          "cartaz": "imagem"
+          "cartaz": "marinha"
         }},
       "mihawk": {"id": "mihawk","name": "Dracule Mihawk","funcao": "Espadachim | Shichibukai",
         "details": {
           "fruta": "Não Possui",
           "arma": "Espada",
           "ator": "Dracule Mihawk | Luiz Antônio Lobue",
-          "cartaz": "imagem"
+          "cartaz": "mihawk"
         }},
       "alvida": {"id": "alvida","name": "Alvida","funcao": "Capitã | Piratas Alvida",
         "details": {
           "fruta": "Não Possui",
           "arma": "Clava de Ferro",
           "ator": "Alvida | Isaura Gomes",
-          "cartaz": "imagem"
+          "cartaz": "alvida"
         }},
       "buggy": {"id": "buggy","name": "Buggy, o Palhaço Estrela","funcao": "Capitão | Piratas do Buggy",
         "details": {
           "fruta": "Bara Bara no Mi",
           "arma": "Facas",
           "ator": "Buggy | Fábio de Castro",
-          "cartaz": "imagem"
+          "cartaz": "buggy"
         }},
       "kuro": {"id": "kuro","name": "Kuro dos Cem Planos","funcao": "Capitão | Piratas do Gato Preto",
         "details": {
           "fruta": "Gomu Gomu no Mi",
           "arma": "Suas Garras",
           "ator": "Kuro | Ricardo Sawaya",
-          "cartaz": "imagem"
+          "cartaz": "kuro"
         }},
       "arlong": {"id": "arlong","name": "Arlong, a Serra","funcao": "Capitão | Piratas Arlong",
         "details": {
           "fruta": "Não Possui",
           "arma": "Espada, Dentes e Homem Peixe",
           "ator": "Arlong, a Serra | Vagner Fagundes",
-          "cartaz": "imagem"
+          "cartaz": "arlong"
         }}}
     }
 }

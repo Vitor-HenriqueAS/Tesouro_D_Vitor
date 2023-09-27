@@ -61,10 +61,6 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
     fetchData();
   }, [qualTexto, qualTema]);
 
-  const contentLoaded = () => {
-    setIsLoading(false);
-  };
-
   if (!personagem) {
     return (
       <div>
@@ -142,13 +138,15 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
       </div>
 
         <div className={styles.cartaz}>
-          <Image
-            src={`/personagens/${qualTema ? 'anime' : 'serie'}/cartaz/${personagem.id}.png`}
-            alt={`Cartaz Do ${personagem.name}`}
-            width={120}
-            height={150}
-            loading="lazy"
-          />
+          {personagem.details?.cartaz && (
+            <Image
+              src={`/personagens/${qualTema ? 'anime' : 'serie'}/cartaz/${personagem.details.cartaz}.png`}
+              alt={`Cartaz Do ${personagem.name}`}
+              width={120}
+              height={150}
+              loading="lazy"
+            />
+          )}
         </div>
       </div>
     </div>
