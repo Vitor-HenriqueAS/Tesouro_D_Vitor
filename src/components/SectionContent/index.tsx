@@ -48,13 +48,18 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
 
     async function fetchData() {
       try {
-        setIsLoading(true); // Set loading to true before fetching data
-        const data = await encontrarPorNome(qualTexto, qualTema);
-        setPersonagem(data);
-        setIsLoading(false); // Set loading to false when data is fetched
+        setIsLoading(true); // Define isLoading como true antes de "buscar" os dados
+
+        // Simula a busca de dados assíncronos com setTimeout (substitua isso pelo seu código de busca real)
+        setTimeout(async () => {
+          const data = await encontrarPorNome(qualTexto, qualTema);
+          setPersonagem(data);
+          setIsLoading(false); // Define isLoading como false após "buscar" os dados
+        }, 300); // Simula um atraso de 300 milissegundos (ajuste conforme necessário para testar)
+
       } catch (error) {
         console.error("Erro ao buscar dados:", error);
-        setIsLoading(false); // Set loading to false in case of an error
+        setIsLoading(false); // Define isLoading como false em caso de erro
       }
     }
 
@@ -93,7 +98,7 @@ export default function SectionContent({ qualTema, qualTexto, ilha }: SecoesProp
         />
       :
       
-    <div>
+    <div className={styles.main}>
       <h2 className={`${melindaFont.className} ${styles.title}`}>
         {personagem.name}
         <Image
